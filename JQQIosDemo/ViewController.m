@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "MenuController.h"
+#import "ImageOperateController.h"
+#import "LoopScrollViewController.h"
 
 @interface ViewController ()
 
@@ -25,6 +27,8 @@
     
     dataArray = [NSMutableArray array];
     [dataArray addObject:@"Menu"];
+    [dataArray addObject:@"ImageOperate"];
+    [dataArray addObject:@"LoopScrollView"];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
@@ -48,7 +52,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    MenuController* controller = [MenuController new];
+    id controller = nil;
+    switch (indexPath.row) {
+        case 0:
+            controller = [MenuController new];
+            break;
+            
+        case 1:
+            controller = [ImageOperateController new];
+            break;
+            
+        case 2:
+            controller = [LoopScrollViewController new];
+            break;
+            
+        default:
+            break;
+    }
     [self.navigationController pushViewController:controller animated:YES];
 }
 

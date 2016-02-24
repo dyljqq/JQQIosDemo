@@ -7,9 +7,12 @@
 //
 
 #import "LoopScrollView.h"
+#import <pop/POP.h>
 
 static const float CELL_HEIGHT = 44.0;//cell高度
 static const int CELL_NUM = 4;//显示cell数量
+
+#define APPLICATION_SIZE [UIScreen mainScreen].bounds.size
 
 @interface LoopScrollView () <UITableViewDataSource, UITableViewDelegate>
 
@@ -34,7 +37,7 @@ static const int CELL_NUM = 4;//显示cell数量
 
 - (void)initView:(CGRect)frame{
     self.backgroundColor = [UIColor whiteColor];
-    self.tableView.frame = frame;
+    self.tableView.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
     [self addSubview:self.tableView];
 }
 
@@ -96,8 +99,8 @@ static const int CELL_NUM = 4;//显示cell数量
     
     UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(15, 15, APPLICATION_SIZE.width - 30, 20)];
     label.text = content;
-    label.textColor = FONT_COLOR;
-    label.font = Font(15);
+    label.textColor = [UIColor blackColor];
+    label.font = [UIFont systemFontOfSize:15];
     [view addSubview:label];
     
     return view;
