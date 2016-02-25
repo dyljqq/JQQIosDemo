@@ -10,13 +10,14 @@
 #import "MenuController.h"
 #import "ImageOperateController.h"
 #import "LoopScrollViewController.h"
+#import "TransitionController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController{
-    NSMutableArray* dataArray;
+    NSArray* dataArray;
 }
 
 - (void)viewDidLoad {
@@ -25,10 +26,7 @@
     
     self.title = @"Weidget";
     
-    dataArray = [NSMutableArray array];
-    [dataArray addObject:@"Menu"];
-    [dataArray addObject:@"ImageOperate"];
-    [dataArray addObject:@"LoopScrollView"];
+    dataArray = @[@"Menu", @"ImageOperate", @"LoopScrollView", @"TransitionAnimation"];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
@@ -64,6 +62,10 @@
             
         case 2:
             controller = [LoopScrollViewController new];
+            break;
+            
+        case 3:
+            controller = [TransitionController new];
             break;
             
         default:

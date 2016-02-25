@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73CDF6A61C7EC21200DCEC05 /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */; };
+		73CDF6A91C7ECA7A00DCEC05 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF6A81C7ECA7A00DCEC05 /* TransitionController.m */; };
 		73EAA4FE1C7D79950083278B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA4FD1C7D79950083278B /* main.m */; };
 		73EAA5011C7D79950083278B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA5001C7D79950083278B /* AppDelegate.m */; };
 		73EAA5041C7D79950083278B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA5031C7D79950083278B /* ViewController.m */; };
@@ -26,6 +28,10 @@
 
 /* Begin PBXFileReference section */
 		6416F9A2502CF1D953F78DCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		73CDF6A41C7EC21200DCEC05 /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
+		73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		73CDF6A71C7ECA7A00DCEC05 /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		73CDF6A81C7ECA7A00DCEC05 /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
 		73EAA4F91C7D79950083278B /* JQQIosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQQIosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EAA4FD1C7D79950083278B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73EAA4FF1C7D79950083278B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,13 +98,15 @@
 				73EAA5131C7D89310083278B /* class */,
 				73EAA5021C7D79950083278B /* ViewController.h */,
 				73EAA5031C7D79950083278B /* ViewController.m */,
-				73EAA4FC1C7D79950083278B /* Supporting Files */,
 				73EAA51C1C7DA6460083278B /* MenuController.h */,
 				73EAA51D1C7DA6460083278B /* MenuController.m */,
 				73EAA5271C7DAE490083278B /* ImageOperateController.h */,
 				73EAA5281C7DAE490083278B /* ImageOperateController.m */,
 				73EAA52C1C7DB2EC0083278B /* LoopScrollViewController.h */,
 				73EAA52D1C7DB2EC0083278B /* LoopScrollViewController.m */,
+				73CDF6A71C7ECA7A00DCEC05 /* TransitionController.h */,
+				73CDF6A81C7ECA7A00DCEC05 /* TransitionController.m */,
+				73EAA4FC1C7D79950083278B /* Supporting Files */,
 			);
 			path = JQQIosDemo;
 			sourceTree = "<group>";
@@ -160,6 +168,8 @@
 			children = (
 				73EAA5231C7DAC6F0083278B /* LoopScrollView.h */,
 				73EAA5241C7DAC6F0083278B /* LoopScrollView.m */,
+				73CDF6A41C7EC21200DCEC05 /* TransitionAnimation.h */,
+				73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 				73EAA5181C7D896E0083278B /* MenuButton.m in Sources */,
 				73EAA5041C7D79950083278B /* ViewController.m in Sources */,
 				73EAA51E1C7DA6460083278B /* MenuController.m in Sources */,
+				73CDF6A61C7EC21200DCEC05 /* TransitionAnimation.m in Sources */,
+				73CDF6A91C7ECA7A00DCEC05 /* TransitionController.m in Sources */,
 				73EAA5251C7DAC6F0083278B /* JQQShowImageViewWithScrollView.m in Sources */,
 				73EAA5011C7D79950083278B /* AppDelegate.m in Sources */,
 				73EAA5291C7DAE490083278B /* ImageOperateController.m in Sources */,
