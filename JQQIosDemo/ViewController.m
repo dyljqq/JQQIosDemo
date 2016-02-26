@@ -11,6 +11,7 @@
 #import "ImageOperateController.h"
 #import "LoopScrollViewController.h"
 #import "TransitionController.h"
+#import "JumpViewController.h"
 
 @interface ViewController ()
 
@@ -26,7 +27,7 @@
     
     self.title = @"Weidget";
     
-    dataArray = @[@"Menu", @"ImageOperate", @"LoopScrollView", @"TransitionAnimation"];
+    dataArray = @[@"Menu", @"ImageOperate", @"LoopScrollView", @"TransitionAnimation", @"JumpAnimation"];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
@@ -66,6 +67,10 @@
             
         case 3:
             controller = [TransitionController new];
+            break;
+            
+        case 4:
+            controller = [JumpViewController new];
             break;
             
         default:

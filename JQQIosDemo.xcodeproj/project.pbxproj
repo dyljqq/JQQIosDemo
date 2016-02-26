@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733DBFCB1C803096002D0BD1 /* JumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 733DBFCA1C803096002D0BD1 /* JumpViewController.m */; };
 		73CDF6A61C7EC21200DCEC05 /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */; };
 		73CDF6A91C7ECA7A00DCEC05 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF6A81C7ECA7A00DCEC05 /* TransitionController.m */; };
 		73EAA4FE1C7D79950083278B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA4FD1C7D79950083278B /* main.m */; };
@@ -23,11 +24,15 @@
 		73EAA5291C7DAE490083278B /* ImageOperateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA5281C7DAE490083278B /* ImageOperateController.m */; };
 		73EAA52B1C7DAE6E0083278B /* jqq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73EAA52A1C7DAE6E0083278B /* jqq.jpg */; };
 		73EAA52E1C7DB2EC0083278B /* LoopScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA52D1C7DB2EC0083278B /* LoopScrollViewController.m */; };
+		73F523811C80277E00BE0530 /* JumpAndRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F523801C80277E00BE0530 /* JumpAndRotateView.m */; };
+		73F523831C802FEF00BE0530 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F523821C802FEF00BE0530 /* Images.xcassets */; };
 		FF0BE00B36BDAF0CD5B9C8BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5B58AF0ED367289135E511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6416F9A2502CF1D953F78DCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		733DBFC91C803096002D0BD1 /* JumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JumpViewController.h; path = class/JumpViewController.h; sourceTree = "<group>"; };
+		733DBFCA1C803096002D0BD1 /* JumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JumpViewController.m; path = class/JumpViewController.m; sourceTree = "<group>"; };
 		73CDF6A41C7EC21200DCEC05 /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
 		73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
 		73CDF6A71C7ECA7A00DCEC05 /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
@@ -57,6 +62,9 @@
 		73EAA52A1C7DAE6E0083278B /* jqq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jqq.jpg; sourceTree = "<group>"; };
 		73EAA52C1C7DB2EC0083278B /* LoopScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollViewController.h; sourceTree = "<group>"; };
 		73EAA52D1C7DB2EC0083278B /* LoopScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollViewController.m; sourceTree = "<group>"; };
+		73F5237F1C80277E00BE0530 /* JumpAndRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpAndRotateView.h; sourceTree = "<group>"; };
+		73F523801C80277E00BE0530 /* JumpAndRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpAndRotateView.m; sourceTree = "<group>"; };
+		73F523821C802FEF00BE0530 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8FC48052DB07F9680D32578F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CC5B58AF0ED367289135E511 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +114,8 @@
 				73EAA52D1C7DB2EC0083278B /* LoopScrollViewController.m */,
 				73CDF6A71C7ECA7A00DCEC05 /* TransitionController.h */,
 				73CDF6A81C7ECA7A00DCEC05 /* TransitionController.m */,
+				733DBFC91C803096002D0BD1 /* JumpViewController.h */,
+				733DBFCA1C803096002D0BD1 /* JumpViewController.m */,
 				73EAA4FC1C7D79950083278B /* Supporting Files */,
 			);
 			path = JQQIosDemo;
@@ -114,6 +124,7 @@
 		73EAA4FC1C7D79950083278B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73F523821C802FEF00BE0530 /* Images.xcassets */,
 				73EAA4FF1C7D79950083278B /* AppDelegate.h */,
 				73EAA5001C7D79950083278B /* AppDelegate.m */,
 				73EAA5051C7D79950083278B /* Main.storyboard */,
@@ -170,6 +181,8 @@
 				73EAA5241C7DAC6F0083278B /* LoopScrollView.m */,
 				73CDF6A41C7EC21200DCEC05 /* TransitionAnimation.h */,
 				73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */,
+				73F5237F1C80277E00BE0530 /* JumpAndRotateView.h */,
+				73F523801C80277E00BE0530 /* JumpAndRotateView.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -250,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F523831C802FEF00BE0530 /* Images.xcassets in Resources */,
 				73EAA50C1C7D79950083278B /* LaunchScreen.storyboard in Resources */,
 				73EAA52B1C7DAE6E0083278B /* jqq.jpg in Resources */,
 				73EAA5091C7D79950083278B /* Assets.xcassets in Resources */,
@@ -305,10 +319,12 @@
 				73EAA5251C7DAC6F0083278B /* JQQShowImageViewWithScrollView.m in Sources */,
 				73EAA5011C7D79950083278B /* AppDelegate.m in Sources */,
 				73EAA5291C7DAE490083278B /* ImageOperateController.m in Sources */,
+				733DBFCB1C803096002D0BD1 /* JumpViewController.m in Sources */,
 				73EAA4FE1C7D79950083278B /* main.m in Sources */,
 				73EAA52E1C7DB2EC0083278B /* LoopScrollViewController.m in Sources */,
 				73EAA51B1C7D8EAD0083278B /* SlideMenu.m in Sources */,
 				73EAA5261C7DAC6F0083278B /* LoopScrollView.m in Sources */,
+				73F523811C80277E00BE0530 /* JumpAndRotateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
