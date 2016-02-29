@@ -11,13 +11,13 @@
 #define PROGRESS_BAR_HEIGHT 40
 
 @implementation JQQProgressBar{
-    int progressBarWidth;
     CGRect originFrame;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if(self){
+        self.progressBarHeight = PROGRESS_BAR_HEIGHT;
         [self initView:frame];
     }
     return self;
@@ -28,7 +28,7 @@
     self.backgroundColor = [UIColor blueColor];
     self.layer.cornerRadius = frame.size.height/2;
     self.layer.masksToBounds = YES;
-    progressBarWidth = frame.size.width;
+    _progressBarWidth = frame.size.width;
     
     UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     self.userInteractionEnabled = YES;
@@ -44,7 +44,7 @@
     self.backgroundColor = [UIColor colorWithRed:0.0 green:122/255.0 blue:255/255.0 alpha:1.0];
     
     //layer有两个状态，presentationLayer以及modalLayer，默认情况是改变了layer后会变回原来的modelLayer状态，所以需要先显示的改变他的layer
-    self.layer.cornerRadius = PROGRESS_BAR_HEIGHT/2;
+    self.layer.cornerRadius = _progressBarHeight/2;
     CABasicAnimation* basic = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
     basic.duration = 0.2;
     basic.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
@@ -58,7 +58,7 @@
 - (void)animationDidStart:(CAAnimation *)anim{
     if([anim isEqual:[self.layer animationForKey:@"CornerRadiusAnim"]]){
         [UIView animateWithDuration:0.6 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            self.layer.bounds = CGRectMake(0, 0, progressBarWidth, PROGRESS_BAR_HEIGHT);
+            self.layer.bounds = CGRectMake(0, 0, _progressBarWidth, _progressBarHeight);
         }completion:^(BOOL finished){
             [self.layer removeAllAnimations];
             [self progressBarAnim];
@@ -90,7 +90,7 @@
                 CABasicAnimation *radiusAnimation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
                 radiusAnimation.duration = 0.2f;
                 radiusAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-                radiusAnimation.fromValue = @(PROGRESS_BAR_HEIGHT/2);
+                radiusAnimation.fromValue = @(_progressBarHeight/2);
                 radiusAnimation.delegate = self;
                 [self.layer addAnimation:radiusAnimation forKey:@"cornerRadiusExpandAnim"];
             }
@@ -104,8 +104,8 @@
     CAShapeLayer* layer = [CAShapeLayer layer];
     
     UIBezierPath* path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(PROGRESS_BAR_HEIGHT/2, self.bounds.size.height/2)];
-    [path addLineToPoint:CGPointMake(progressBarWidth - PROGRESS_BAR_HEIGHT/2 , PROGRESS_BAR_HEIGHT/2)];
+    [path moveToPoint:CGPointMake(_progressBarHeight/2, self.bounds.size.height/2)];
+    [path addLineToPoint:CGPointMake(_progressBarWidth - _progressBarHeight/2 , _progressBarHeight/2)];
     
     layer.path = path.CGPath;
     layer.lineWidth = PROGRESS_BAR_HEIGHT - 6;

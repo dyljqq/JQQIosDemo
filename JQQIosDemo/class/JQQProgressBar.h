@@ -14,6 +14,6 @@
 @property (nonatomic)NSUInteger progressBarWidth;
 
 //进度条的长
-@property (nonatomic)NSUInteger progressBarHieght;
+@property (nonatomic)NSUInteger progressBarHeight;
 
 @end
