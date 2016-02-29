@@ -12,6 +12,7 @@
 #import "LoopScrollViewController.h"
 #import "TransitionController.h"
 #import "JumpViewController.h"
+#import "ProgressBarViewController.h"
 
 @interface ViewController ()
 
@@ -27,7 +28,7 @@
     
     self.title = @"Weidget";
     
-    dataArray = @[@"Menu", @"ImageOperate", @"LoopScrollView", @"TransitionAnimation", @"JumpAnimation"];
+    dataArray = @[@"Menu", @"ImageOperate", @"LoopScrollView", @"TransitionAnimation", @"JumpAnimation", @"ProgressBar"];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
@@ -71,6 +72,10 @@
             
         case 4:
             controller = [JumpViewController new];
+            break;
+            
+        case 5:
+            controller = [ProgressBarViewController new];
             break;
             
         default:

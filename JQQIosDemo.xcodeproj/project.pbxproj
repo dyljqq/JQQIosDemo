@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		733DBFCB1C803096002D0BD1 /* JumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 733DBFCA1C803096002D0BD1 /* JumpViewController.m */; };
+		73B7E8231C83DD2C0060A9D7 /* JQQProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B7E8221C83DD2C0060A9D7 /* JQQProgressBar.m */; };
+		73B7E8261C83DFA10060A9D7 /* ProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B7E8251C83DFA10060A9D7 /* ProgressBarViewController.m */; };
 		73CDF6A61C7EC21200DCEC05 /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */; };
 		73CDF6A91C7ECA7A00DCEC05 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDF6A81C7ECA7A00DCEC05 /* TransitionController.m */; };
 		73EAA4FE1C7D79950083278B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EAA4FD1C7D79950083278B /* main.m */; };
@@ -33,6 +35,10 @@
 		6416F9A2502CF1D953F78DCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		733DBFC91C803096002D0BD1 /* JumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JumpViewController.h; path = class/JumpViewController.h; sourceTree = "<group>"; };
 		733DBFCA1C803096002D0BD1 /* JumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JumpViewController.m; path = class/JumpViewController.m; sourceTree = "<group>"; };
+		73B7E8211C83DD2C0060A9D7 /* JQQProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQQProgressBar.h; sourceTree = "<group>"; };
+		73B7E8221C83DD2C0060A9D7 /* JQQProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQQProgressBar.m; sourceTree = "<group>"; };
+		73B7E8241C83DFA10060A9D7 /* ProgressBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressBarViewController.h; sourceTree = "<group>"; };
+		73B7E8251C83DFA10060A9D7 /* ProgressBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressBarViewController.m; sourceTree = "<group>"; };
 		73CDF6A41C7EC21200DCEC05 /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
 		73CDF6A51C7EC21200DCEC05 /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
 		73CDF6A71C7ECA7A00DCEC05 /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
@@ -81,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73B7E8201C83DD030060A9D7 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				73B7E8211C83DD2C0060A9D7 /* JQQProgressBar.h */,
+				73B7E8221C83DD2C0060A9D7 /* JQQProgressBar.m */,
+			);
+			name = ProgressBar;
+			sourceTree = "<group>";
+		};
 		73EAA4F01C7D79950083278B = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +132,8 @@
 				733DBFC91C803096002D0BD1 /* JumpViewController.h */,
 				733DBFCA1C803096002D0BD1 /* JumpViewController.m */,
 				73EAA4FC1C7D79950083278B /* Supporting Files */,
+				73B7E8241C83DFA10060A9D7 /* ProgressBarViewController.h */,
+				73B7E8251C83DFA10060A9D7 /* ProgressBarViewController.m */,
 			);
 			path = JQQIosDemo;
 			sourceTree = "<group>";
@@ -139,6 +156,7 @@
 		73EAA5131C7D89310083278B /* class */ = {
 			isa = PBXGroup;
 			children = (
+				73B7E8201C83DD030060A9D7 /* ProgressBar */,
 				73EAA51F1C7DAC6F0083278B /* Image */,
 				73EAA5221C7DAC6F0083278B /* other */,
 				73EAA5141C7D89310083278B /* Menu */,
@@ -321,10 +339,12 @@
 				73EAA5291C7DAE490083278B /* ImageOperateController.m in Sources */,
 				733DBFCB1C803096002D0BD1 /* JumpViewController.m in Sources */,
 				73EAA4FE1C7D79950083278B /* main.m in Sources */,
+				73B7E8231C83DD2C0060A9D7 /* JQQProgressBar.m in Sources */,
 				73EAA52E1C7DB2EC0083278B /* LoopScrollViewController.m in Sources */,
 				73EAA51B1C7D8EAD0083278B /* SlideMenu.m in Sources */,
 				73EAA5261C7DAC6F0083278B /* LoopScrollView.m in Sources */,
 				73F523811C80277E00BE0530 /* JumpAndRotateView.m in Sources */,
+				73B7E8261C83DFA10060A9D7 /* ProgressBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
