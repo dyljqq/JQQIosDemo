@@ -34,6 +34,14 @@
 }
 
 - (void)showImageViewAtIndex:(NSArray *)images atIndex:(int)index{
+    
+    //删除原有的UIImageView
+    for (UIView* view in self.subviews) {
+        if([view isKindOfClass:[UIImageView class]]){
+            [view removeFromSuperview];
+        }
+    }
+    
     float x = 0;
     int n = 0;
     for (id image in images) {
